@@ -6,6 +6,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DatasPage } from '../pages/datas/datas';
+import { GermanyPage } from '../pages/ships/germany/germany';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DatasPage } from '../pages/datas/datas';
     ContactPage,
     HomePage,
     TabsPage,
-    DatasPage
+    DatasPage,
+    GermanyPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +28,8 @@ import { DatasPage } from '../pages/datas/datas';
     ContactPage,
     HomePage,
     TabsPage,
-    DatasPage
+    DatasPage,
+    GermanyPage
   ],
   providers: []
 })
