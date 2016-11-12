@@ -6,6 +6,22 @@
   </ion-navbar>
 </ion-header>
 
+
+
 <ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-left>
+      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
+      {{ datas.title }}
+    </button>
+  </ion-list>
+</ion-content>
+
+<ion-content>
+  <ion-list>
+    
+
+  </ion-list>
+
 
 </ion-content>
