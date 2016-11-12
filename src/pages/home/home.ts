@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-// import { Observable } from '@rxjs/Observable';
-import 'rxjs';
 import { NavController } from 'ionic-angular';
+import { GermanyPagesPage } from "../ships/GermanyPages/GermanyPages"
 
 @Component({
   selector: 'page-home',
@@ -11,6 +10,9 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+  opengermanyPage() {
+      this.navCtrl.push(GermanyPagesPage);
   }
 
 }
