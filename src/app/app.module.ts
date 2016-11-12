@@ -6,6 +6,10 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DatasPage } from '../pages/datas/datas';
+import { GermanyPage } from '../pages/ships/germany/germany';
+import { UsaPage } from '../pages/ships/usa/usa';
+import { JapanPage } from '../pages/ships/japan/japan';
+import { SovietPage } from '../pages/ships/soviet/soviet';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { DatasPage } from '../pages/datas/datas';
     ContactPage,
     HomePage,
     TabsPage,
-    DatasPage
+    DatasPage,
+    GermanyPage,
+    SovietPage,
+    JapanPage,
+    UsaPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +34,11 @@ import { DatasPage } from '../pages/datas/datas';
     ContactPage,
     HomePage,
     TabsPage,
-    DatasPage
+    DatasPage,
+    GermanyPage,
+    SovietPage,
+    JapanPage,
+    UsaPage
   ],
   providers: []
 })

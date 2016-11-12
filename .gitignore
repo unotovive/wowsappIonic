@@ -28,6 +28,8 @@ plugins/android.json
 plugins/ios.json
 www/
 $RECYCLE.BIN/
+.io-config.json
+ionic.config.json
 
 .DS_Store
 Thumbs.db

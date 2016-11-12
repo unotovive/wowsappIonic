@@ -1,15 +1,51 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>艦艇データ</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding class="home">
-    <ion-list class="sort-list">
-        <ion-item class="sort-item">
-            aaa
-        </ion-item>
-    </ion-list>
+    <!--<table border="0" width="90%" class="table1">
+        <tr>
+        <td align="center"><img src='../../assets/img/nation/doitu.png'><br>ドイツ</td>
+        <td align="center"><img src='../../assets/img/nation/doitu.png'><br>ソ連</td></tr>
+        <tr>
+        <td align="center"><img src='../../assets/img/nation/nihon.png'><br>日本</td>
+        <td align="center"><img src='../../assets/img/nation/amerika.png'><br>アメリカ</td>
+        </tr>
+        <tr>
+        <td align="center"><img src='../../assets/img/nation/tyuugoku.png'><br>アジア</td>
+        <td align="center"></td>
+        </tr>
+    </table>-->
+    <!--アバターリスト-->
+    <ion-list>
+        <ion-list-header>艦艇の国家を選択</ion-list-header>
+      <ion-item (click)="openGermanyPage()">
+      <ion-avatar item-left>
+        <img src="../../assets/img/nation/doitu.png">
+      </ion-avatar>
+      <h2>ドイツ</h2>
+    </ion-item>
 
+    <ion-item (click)="openJapanPage()">
+      <ion-avatar item-left>
+        <img src="../../assets/img/nation/nihon.png">
+      </ion-avatar>
+      <h2>日本</h2>
+    </ion-item>
 
+    <ion-item (click)="openSovietPage()">
+      <ion-avatar item-left>
+        <img src="../../assets/img/nation/doitu.png">
+      </ion-avatar>
+      <h2>ソ連</h2>
+    </ion-item>
+
+    <ion-item (click)="openUsaPage()">
+      <ion-avatar item-left>
+        <img src="../../assets/img/nation/tyuugoku.png">
+      </ion-avatar>
+      <h2>アメリカ</h2>
+    </ion-item>
+  </ion-list>
 </ion-content>
