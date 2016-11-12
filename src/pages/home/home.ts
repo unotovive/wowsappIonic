@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { GermanyPagesPage } from "../ships/GermanyPages/GermanyPages"
+import { GermanyPage } from "../ships/germany/germany"
 
 @Component({
   selector: 'page-home',
@@ -12,7 +12,7 @@ export class HomePage {
 
   }
   opengermanyPage() {
-      this.navCtrl.push(GermanyPagesPage);
+      this.navCtrl.push(GermanyPage);
   }
 
 }
