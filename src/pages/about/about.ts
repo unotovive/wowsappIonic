@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import { DatasPage } from '../datas//datas'
+import { DatasPage } from '../datas/datas';
 
 
 @Component({
@@ -11,19 +11,11 @@ import { DatasPage } from '../datas//datas'
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {}
 
+    openNavDetailsPage(){
+      this.navCtrl.push(DatasPage);
+      console.log("aaaa");
   }
 
 }
-
-@Component({
-  template: `<ion-nav [root]="root"></ion-nav>`
-})
-class MyApp {
-  root = DatasPage;
-
-  constructor(){
-  }
-}
-
