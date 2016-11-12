@@ -1,27 +1,74 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Map
     </ion-title>
   </ion-navbar>
+
+ <ion-toolbar no-border-top>
+  <ion-segment [(ngModel)]="map">
+    <ion-segment-button value="tsu">
+      通常戦
+    </ion-segment-button>
+    <ion-segment-button value="sei">
+      制圧戦
+    </ion-segment-button>
+  </ion-segment>
+ </ion-toolbar>
 </ion-header>
 
 
 
 <ion-content padding>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-left>
-      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
-      {{ datas.title }}
-    </button>
-  </ion-list>
-</ion-content>
+<div [ngSwitch]="map">
+  <ion-list (click)="openNavDetailsPage()" *ngSwitchCase="'tsu'">
+        <button ion-button block>
+            大海原
+        </button>
+        <button ion-button block>
+            断層線
+        </button>
+        <button ion-button block>
+            海峡
+        </button>
+        <button ion-button block>
+            罠
+        </button>
+        <button ion-button block>
+            火の地
+        </button>
+        <button ion-button block>
+            極地
+        </button>
+        <button ion-button block>
+            あああ
+        </button>
 
-<ion-content>
-  <ion-list>
-    
+    </ion-list>
 
-  </ion-list>
+      <ion-list (click)="openNavDetailsPage()" *ngSwitchCase="'sei'">
+        <button ion-button block>
+            aaa
+        </button>
+        <button ion-button block>
+            断層線aesg
+        </button>
+        <button ion-button block>
+            海峡aegs
+        </button>
+        <button ion-button block>
+            罠
+        </button>
+        <button ion-button block>
+            火の地
+        </button>
+        <button ion-button block>
+            極地
+        </button>
+        <button ion-button block>
+            あああ
+        </button>
 
-
+    </ion-list>
+</div>
 </ion-content>
