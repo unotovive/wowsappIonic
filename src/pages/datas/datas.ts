@@ -11,6 +11,8 @@ export class DatasPage {
 
   ionViewDidLoad() {
     console.log('Hello DatasPage Page');
+
+
   }
 
 }
