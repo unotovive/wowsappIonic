@@ -1,7 +1,9 @@
 # wowsapp 
 * ionic2 (2.1.4)
+
 ## Contributor
   nishi3
+  
 ## branch命名ルール
 * add- 機能追加
 
