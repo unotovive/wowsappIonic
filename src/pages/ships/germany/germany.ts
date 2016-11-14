@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { DetailPage } from '../detail/detail';
 
 /*
   Generated class for the Germany page.
@@ -17,6 +18,9 @@ export class GermanyPage {
 
   ionViewDidLoad() {
     console.log('Hello GermanyPage Page');
+  }
+  goToDetailPage(i) {
+    this.navCtrl.push(DetailPage, { num : i});
   }
 
 }

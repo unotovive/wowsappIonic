@@ -10,6 +10,7 @@ import { GermanyPage } from '../pages/ships/germany/germany';
 import { UsaPage } from '../pages/ships/usa/usa';
 import { JapanPage } from '../pages/ships/japan/japan';
 import { SovietPage } from '../pages/ships/soviet/soviet';
+import { DetailPage } from '../pages/ships/detail/detail';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SovietPage } from '../pages/ships/soviet/soviet';
     GermanyPage,
     SovietPage,
     JapanPage,
-    UsaPage
+    UsaPage,
+    DetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -38,7 +40,8 @@ import { SovietPage } from '../pages/ships/soviet/soviet';
     GermanyPage,
     SovietPage,
     JapanPage,
-    UsaPage
+    UsaPage,
+    DetailPage
   ],
   providers: []
 })
