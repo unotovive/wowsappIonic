@@ -21,8 +21,8 @@
 
 <ion-content padding>
 <div [ngSwitch]="map">
-  <ion-list (click)="openNavDetailsPage()" *ngSwitchCase="'tsu'">
-        <button ion-button block>
+  <ion-list  *ngSwitchCase="'tsu'">
+        <button ion-button block (click)="openNavDetailsPage(1)">
             大海原
         </button>
         <button ion-button block>
@@ -46,8 +46,8 @@
 
     </ion-list>
 
-      <ion-list (click)="openNavDetailsPage()" *ngSwitchCase="'sei'">
-        <button ion-button block>
+      <ion-list  *ngSwitchCase="'sei'">
+        <button ion-button block (click)="openNavDetailsPage(2)">
             aaa
         </button>
         <button ion-button block>

@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
 
 @Component({
   selector: 'page-datas',
   templateUrl: 'datas.html'
 })
 export class DatasPage {
+num:string;
+  constructor(public navCtrl: NavController, navParams: NavParams) {
 
-  constructor(public navCtrl: NavController) {}
+       this.num = navParams.get("num");
+  }
 
   ionViewDidLoad() {
     console.log('Hello DatasPage Page');

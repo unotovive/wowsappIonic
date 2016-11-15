@@ -14,8 +14,8 @@ export class AboutPage {
 
   constructor(public navCtrl: NavController) {}
 
-    openNavDetailsPage(){
-      this.navCtrl.push(DatasPage);
+    openNavDetailsPage(i){
+      this.navCtrl.push(DatasPage, { num : i});
       console.log("aaaa");
   }
 
