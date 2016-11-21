@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Map
+      マップデータ
     </ion-title>
   </ion-navbar>
 
@@ -12,6 +12,9 @@
     </ion-segment-button>
     <ion-segment-button value="sei">
       制圧戦
+    </ion-segment-button>
+    <ion-segment-button value="sonota">
+      その他
     </ion-segment-button>
   </ion-segment>
  </ion-toolbar>
@@ -185,6 +188,23 @@
         <button ion-button block (click)="openNavDetailsPage(56)">
             破片
         </button>
+
+    </ion-list>
+
+    <ion-list  *ngSwitchCase="'sonota'">
+        <button ion-button block (click)="openNavDetailsPage(101)">
+            中央攻略戦：トライデント
+        </button>
+        <button ion-button block (click)="openNavDetailsPage(102)">
+            中央攻略戦：ビッグレース
+        </button>
+        <button ion-button block (click)="openNavDetailsPage(103)">
+            中央攻略戦：砂漠の涙
+        </button>
+        <button ion-button block (click)="openNavDetailsPage(104)">
+            要塞戦：大西洋
+        </button>
+
 
     </ion-list>
 </div>

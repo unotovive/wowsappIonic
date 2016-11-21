@@ -16,7 +16,7 @@ export class AboutPage {
 
     openNavDetailsPage(i){
       this.navCtrl.push(DatasPage, { num : i});
-      console.log("aaaa");
+      console.log("banzai");
   }
 
 }

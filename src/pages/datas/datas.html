@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Map Data</ion-title>
+    <ion-title>{{map.mapName}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,8 +18,8 @@
 
   <ion-card>
     <img src="../../assets/img/maps/{{num}}.png"/>
-    <div class="card-title">ソロモン諸島</div>
-    <div class="card-subtitle">制圧戦</div>
+    <div class="card-title">{{map.mapName}}</div>
+    <div class="card-subtitle">{{map.battleType}}</div>
   </ion-card>
 
 </ion-content>
