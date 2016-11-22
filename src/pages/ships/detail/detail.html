@@ -33,20 +33,19 @@
             <ion-item-divider color="light">基本データ</ion-item-divider>
             <ion-list>
                 <ion-item>
-                    <p item-right>{{ship.type}}</p>
-                    <p item-left>Teir {{ship.teir}}</p>
+                    <span>Teir {{ship.teir}}</span>
+                    <span item-right>{{ship.type}}</span>
                 </ion-item>
                 <ion-item>
-                    <p item-left>継続戦力(HP)</p>
-                    <p item-right>{{ship.hpA}}</p>
+                    <span>継続戦力(HP)</span>
+                    <span item-right>{{ship.hpA}}</span>
                 </ion-item>
                 <ion-item>
-                    <p item-left>最大速力</p>
-                    <p item-right>{{ship.speedA}}</p>
+                    <span>最大速力</span>
                 </ion-item>
                 <ion-item>
                     <p item-left>後期</p>
-                    <ion-toggle checked="false"></ion-toggle>
+                    
                 </ion-item>
             </ion-list>
             <!--船体Aのbody部分おわり-->
@@ -59,5 +58,5 @@
             <!--船体Cのbody部分はじめ-->
             <!--船体Cのbody部分おわり-->
         </ion-list>
-    </div>
+        </div>
 </ion-content>
