@@ -6,8 +6,15 @@ import { NavController, NavParams} from 'ionic-angular';
   templateUrl: 'datas.html'
 })
 export class DatasPage {
+maps: string = "tsu";
 num:number;
-map = {mapName:"ダブロンくーださい", battleType:"Tashkentはいいぞ～"};
+
+// componentNumber: number = 1;
+// ChangeComponent(value:number){
+//   this.componentNumber = value;
+// }
+
+map = {mapName:"ありません^^", battleType:""};
   constructor(public navCtrl: NavController, navParams: NavParams) {
 
        this.num = navParams.get("num");
@@ -15,6 +22,8 @@ map = {mapName:"ダブロンくーださい", battleType:"Tashkentはいいぞ�
 
   ionViewDidLoad() {
     console.log('Hello DatasPage Page');
+
+    
     switch (this.num){
                   case 1:
         this.map={ mapName :"群島",
@@ -266,15 +275,15 @@ map = {mapName:"ダブロンくーださい", battleType:"Tashkentはいいぞ�
                   battleType:"制圧戦",};
                   break;
 
-                  case 51:
-        this.map={ mapName :"ビッグレース",
-                  battleType:"通常戦",};
-                  break;
+        //           case 101:
+        // this.map={ mapName :"ビッグレース",
+        //           battleType:"通常戦",};
+        //           break;
 
-                  case 52:
-        this.map={ mapName :"ビッグレース",
-                  battleType:"制圧戦",};
-                  break;
+        //           case 52:
+        // this.map={ mapName :"ビッグレース",
+        //           battleType:"制圧戦",};
+        //           break;
 
                   case 53:
         this.map={ mapName :"ループ",
@@ -316,7 +325,72 @@ map = {mapName:"ダブロンくーださい", battleType:"Tashkentはいいぞ�
                   battleType:"制圧戦",};
                   break;
 
+                  case 51:
+        this.map={ mapName :"ビッグレース",
+                  battleType:"通常戦",};
+                  break;
+
+                  case 52:
+        this.map={ mapName :"ビッグレース",
+                  battleType:"制圧戦",};
+                  break;
+
+        //           case 53:
+        // this.map={ mapName :"ループ",
+        //           battleType:"通常戦",};
+        //           break;
+
+        //           case 54:
+        // this.map={ mapName :"ループ",
+        //           battleType:"制圧戦",};
+        //           break;
+
+        //           case 55:
+        // this.map={ mapName :"破片",
+        //           battleType:"通常戦",};
+        //           break;
+
+        //           case 56:
+        // this.map={ mapName :"破片",
+        //           battleType:"制圧戦",};
+        //           break;
+
+                  case 57:
+        this.map={ mapName :"soon",
+                  battleType:"通常戦",};
+                  break;
+
+                  case 58:
+        this.map={ mapName :"soon",
+                  battleType:"制圧戦",};
+                  break;
+
+                  case 59:
+        this.map={ mapName :"soon",
+                  battleType:"通常戦",};
+                  break;
+
+                  case 60:
+        this.map={ mapName :"soon",
+                  battleType:"制圧戦",};
+                  break;
+
+        //           case 101:
+        // this.map={ mapName :"ビッグレース",
+        //           battleType:"通常戦",};
+        //           break;
+
+        //           case 103:
+        // this.map={ mapName :"ループ",
+        //           battleType:"制圧戦",};
+        //           break;
+
+        //           case 105:
+        // this.map={ mapName :"破片",
+        //           battleType:"制圧戦",};
+        //           break;
     }
+    
 
 
   }

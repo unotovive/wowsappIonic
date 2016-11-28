@@ -5,7 +5,7 @@
     </ion-title>
   </ion-navbar>
 
- <ion-toolbar no-border-top>
+ <!--<ion-toolbar no-border-top>
   <ion-segment [(ngModel)]="map">
     <ion-segment-button value="tsu">
       通常戦
@@ -17,14 +17,15 @@
       その他
     </ion-segment-button>
   </ion-segment>
- </ion-toolbar>
+ </ion-toolbar>-->
 </ion-header>
 
 
 
 <ion-content padding>
-<div [ngSwitch]="map">
-  <ion-list  *ngSwitchCase="'tsu'">
+<!--<div [ngSwitch]="map">
+  <ion-list  *ngSwitchCase="'tsu'">-->
+      <ion-list>
         <button ion-button block (click)="openNavDetailsPage(1)">
             群島
         </button>
@@ -100,14 +101,14 @@
         <button ion-button block (click)="openNavDetailsPage(49)">
             幸運の海
         </button>
-        <button ion-button block (click)="openNavDetailsPage(51)">
+        <button ion-button block (click)="openNavDetailsPage(101)">
             ビッグレース
         </button>
 
-    </ion-list>
+    <!--</ion-list>
 
-      <ion-list  *ngSwitchCase="'sei'">
-        <button ion-button block (click)="openNavDetailsPage(2)">
+      <ion-list  *ngSwitchCase="'sei'">-->
+        <!--<button ion-button block (click)="openNavDetailsPage(2)">
             群島
         </button>
         <button ion-button block (click)="openNavDetailsPage(4)">
@@ -181,15 +182,16 @@
         </button>
         <button ion-button block (click)="openNavDetailsPage(50)">
             幸運の海
-        </button>
-        <button ion-button block (click)="openNavDetailsPage(54)">
+        </button>-->
+        <button ion-button block (click)="openNavDetailsPage(102)">
             ループ
         </button>
-        <button ion-button block (click)="openNavDetailsPage(56)">
+        <button ion-button block (click)="openNavDetailsPage(103)">
             破片
         </button>
+      </ion-list>
 
-    </ion-list>
+    <!--</ion-list>
 
     <ion-list  *ngSwitchCase="'sonota'">
         <button ion-button block (click)="openNavDetailsPage(101)">
@@ -207,5 +209,5 @@
 
 
     </ion-list>
-</div>
+</div>-->
 </ion-content>
