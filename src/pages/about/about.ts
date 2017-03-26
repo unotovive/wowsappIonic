@@ -10,13 +10,13 @@ import { DatasPage } from '../datas/datas';
   templateUrl: 'about.html'
 })
 export class AboutPage {
-    map: string = "tsu";
+    //map: string = "tsu";
 
   constructor(public navCtrl: NavController) {}
 
     openNavDetailsPage(i){
       this.navCtrl.push(DatasPage, { num : i});
-      console.log("aaaa");
+      console.log("banzai");
   }
 
 }

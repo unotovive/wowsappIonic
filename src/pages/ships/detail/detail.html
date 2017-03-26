@@ -5,15 +5,58 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{ship.name}}
+        </ion-title>
+    </ion-navbar>
 
-<ion-navbar>
-    <ion-title>{{ship.name}}</ion-title>
-  </ion-navbar>
-
+    <ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="sType">
+            <ion-segment-button value="a">
+                A船体
+            </ion-segment-button>
+            <ion-segment-button value="b">
+                B船体
+            </ion-segment-button>
+            <ion-segment-button value="c">
+                C船体
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
 </ion-header>
 
-
-<ion-content padding >
-   <p>Tier {{ship.teir}}</p>
-   <p>艦種 {{ship.type}}</p>
+<ion-content padding>
+    <div [ngSwitch]="sType">
+        <ion-list *ngSwitchCase="'a'">
+            <!--船体Aのbody部分はじめ-->
+            <ion-item-divider color="light">基本データ</ion-item-divider>
+            <ion-list>
+                <ion-item>
+                    <span>Teir {{ship.teir}}</span>
+                    <span item-right>{{ship.type}}</span>
+                </ion-item>
+                <ion-item>
+                    <span>継続戦力(HP)</span>
+                    <span item-right>{{ship.hpA}}</span>
+                </ion-item>
+                <ion-item>
+                    <span>最大速力</span>
+                </ion-item>
+                <ion-item>
+                    <p item-left>後期</p>
+                    
+                </ion-item>
+            </ion-list>
+            <!--船体Aのbody部分おわり-->
+        </ion-list>
+        <ion-list *ngSwitchCase="'b'">
+            <!--船体Bのbody部分はじめ-->
+            <!--船体Bのbody部分おわり-->
+        </ion-list>
+        <ion-list *ngSwitchCase="'c'">
+            <!--船体Cのbody部分はじめ-->
+            <!--船体Cのbody部分おわり-->
+        </ion-list>
+        </div>
 </ion-content>

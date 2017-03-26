@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Map Data</ion-title>
+    <ion-title>{{map.mapName}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,11 +15,37 @@
 
 <ion-content class="card-background-page">
 
+ <ion-toolbar no-border-top>
+  <ion-segment [(ngModel)]="maps">
+    <ion-segment-button value="tsu">
+      通常戦
+    </ion-segment-button>
+    <ion-segment-button value="sei">
+      制圧戦
+    </ion-segment-button>
+    <!--<ion-segment-button value="sonota">
+      その他
+    </ion-segment-button>-->
+  </ion-segment>
+ </ion-toolbar>
 
+<div [ngSwitch]="maps">
+  <ion-list  *ngSwitchCase="'tsu'">
   <ion-card>
     <img src="../../assets/img/maps/{{num}}.png"/>
-    <div class="card-title">ソロモン諸島</div>
-    <div class="card-subtitle">制圧戦</div>
+    <div class="card-title">{{map.mapName}}</div>
+    <div class="card-subtitle">{{map.battleType}}</div>
   </ion-card>
+  </ion-list>
+
+  <ion-list  *ngSwitchCase="'sei'">
+      <ion-card>
+    <img src="../../assets/img/maps/{{num+1}}.png"/>
+    <div class="card-title">{{map.mapName}}</div>
+    <div class="card-subtitle">{{map.battleType}}</div>
+  </ion-card>
+  </ion-list>
+  
+</div>
 
 </ion-content>
