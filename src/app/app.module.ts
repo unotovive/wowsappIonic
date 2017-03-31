@@ -11,6 +11,7 @@ import { GermanyPage } from '../pages/ships/germany/germany';
 import { UsaPage } from '../pages/ships/usa/usa';
 import { JapanPage } from '../pages/ships/japan/japan';
 import { SovietPage } from '../pages/ships/soviet/soviet';
+import { NationsPage } from '../pages/ships/nations/nations';
 import { DetailPage } from '../pages/ships/detail/detail';
 
 // export const firebaseConfig = {
@@ -33,7 +34,8 @@ import { DetailPage } from '../pages/ships/detail/detail';
     SovietPage,
     JapanPage,
     UsaPage,
-    DetailPage
+    DetailPage,
+    NationsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -57,7 +59,8 @@ import { DetailPage } from '../pages/ships/detail/detail';
     SovietPage,
     JapanPage,
     UsaPage,
-    DetailPage
+    DetailPage,
+    NationsPage
   ],
   providers: []
 })

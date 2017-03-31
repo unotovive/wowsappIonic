@@ -4,21 +4,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding class="home">
-    <!--<table border="0" width="90%" class="table1">
-        <tr>
-        <td align="center"><img src='../../assets/img/nation/doitu.png'><br>ドイツ</td>
-        <td align="center"><img src='../../assets/img/nation/doitu.png'><br>ソ連</td></tr>
-        <tr>
-        <td align="center"><img src='../../assets/img/nation/nihon.png'><br>日本</td>
-        <td align="center"><img src='../../assets/img/nation/amerika.png'><br>アメリカ</td>
-        </tr>
-        <tr>
-        <td align="center"><img src='../../assets/img/nation/tyuugoku.png'><br>アジア</td>
-        <td align="center"></td>
-        </tr>
-    </table>-->
-    <!--アバターリスト-->
-    <ion-list>
+    <!--<ion-list>
         <ion-list-header>艦艇の国家を選択</ion-list-header>
       <ion-item (click)="openGermanyPage()">
       <ion-avatar item-left>
@@ -47,5 +33,14 @@
       </ion-avatar>
       <h2>アメリカ</h2>
     </ion-item>
+  </ion-list>-->
+  <ion-list>
+      <ion-list-header>艦艇の国家を選択</ion-list-header>
+      <ion-item *ngFor="let nation of nations |async" (click)="openNationPage(nation)">
+          <ion-avatar item-left>
+            <img src="{{nation.icon}}">
+          </ion-avatar>
+          <h2>{{nation.name}}</h2>
+      </ion-item>
   </ion-list>
 </ion-content>
